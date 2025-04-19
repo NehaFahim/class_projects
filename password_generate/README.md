@@ -1,38 +1,65 @@
-"""
-📄 Project: Simple Unit Converter using Streamlit
-🔧 Language: Python
-🧰 Library: Streamlit
+# 🔐 Simple Password Generator
 
-📌 Description:
-This is a simple and interactive Unit Converter web application built using Python and Streamlit. 
-It allows users to convert values between basic metric units such as:
-- Meters ↔ Kilometers
-- Grams ↔ Kilograms
+A simple yet powerful password generator built using **Python** and **Streamlit**, created as part of a UV assignment. This app allows users to generate secure passwords based on custom options like length, inclusion of digits, and special characters.
 
-💡 Features:
-- Clean and user-friendly web interface
-- Real-time conversion between supported units
-- Uses predefined conversion factors for quick results
-- Built with modular and readable Python code
+---
 
-📚 What You Will Learn:
-- How to use Streamlit to create web apps in Python
-- Handling user input using Streamlit components like number_input, selectbox, and button
-- Writing reusable and logical Python functions
-- Real-world application of conditional logic and dictionaries in Python
+## 🚀 Features
 
-▶️ How to Run:
-1. Make sure Python is installed on your system.
-2. Install Streamlit using pip:
-   pip install streamlit
+- Choose password length (between 6 to 32 characters)
+- Option to include:
+  - Numbers (0-9)
+  - Special characters (!@#$%^&* etc.)
+- Clean and interactive UI built with **Streamlit**
+- Randomized secure password output
 
-3. Run the app:
-   streamlit run uc.py
+---
 
-📈 Future Improvements:
-- Add more unit categories (e.g., time, temperature, speed)
-- Improve user experience and form validation
-- Add custom unit input and history tracking
+## 🛠️ Tech Stack
 
-👩‍💻 Created by: Neha Fahim
-"""
+- **Python 3**
+- **Streamlit**
+- **Random** and **String** (Python built-in libraries)
+
+---
+
+## 📦 Installation & Setup
+First, install **UV** (if not already installed):
+```sh
+curl -LsSf https://astral.sh/uv/install.sh | sh
+```
+
+For Windows:
+
+```sh
+powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"
+```
+
+Verify installation:
+
+```sh
+uv --version
+```
+
+---
+### 2️⃣ Create and Initialize the Project
+
+```sh
+uv init password-generator
+cd password-generator
+```
+
+---
+
+### 3️⃣ Install Sreamlit (Dependency)
+
+```sh
+uv add streamlit
+```
+
+---
+### 5️⃣ Run Password Generator
+
+```sh
+streamlit run password.py
+```
